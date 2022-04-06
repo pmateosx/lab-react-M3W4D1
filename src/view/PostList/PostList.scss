@@ -1,0 +1,43 @@
+.PostList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .card {
+        width: 60%;
+        margin: 0.5rem;
+        border-radius: 10px;
+        border: 1px solid black; 
+        padding: 2rem;
+
+        h2 {
+            margin: 0;
+        }
+
+        .user-section {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: row;
+
+            small {
+                margin-left: 0.5rem;
+            }
+
+            .picture-card {
+                background-color: gray;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+        }
+
+    }
+}

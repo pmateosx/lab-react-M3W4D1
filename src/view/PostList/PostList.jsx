@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import { getPostList } from "../../services/PostList"
+import './PostList.scss'
 
 const PostList = () => {
     const [postList, setPostList] = useState([])
@@ -8,7 +10,6 @@ const PostList = () => {
         getPostList()
             .then(posts => {
                 setPostList(posts)
-                console.log(posts);
             })
     }, [setPostList])
 
@@ -16,9 +17,13 @@ const PostList = () => {
         <div className="PostList">
             {postList.map(post => {
                 return (
-                    <div key={post.id}>
+                    <div key={post.id} className='card'>
                         <h2>{post.title}</h2>
                         <p>{post.body}</p>
+                    <Link to={`/users/${post.userId}`} className="user-section">
+                        <div className="picture-card"></div>
+                        <small>View User</small>
+                    </Link>
                     </div>
                 )
             })}

@@ -1,0 +1,15 @@
+.Navbar {
+    width: 100vw;
+}
+.links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        margin-right: 2rem;
+        border: 1px solid rgb(220, 220, 220);
+        border-radius: 7px;
+        padding: 0.5rem;
+    }
+}

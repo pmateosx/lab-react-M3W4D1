@@ -5,10 +5,12 @@ import Navbar from './components/Navbar/Navbar';
 import PostList from './view/PostList/PostList';
 import UsersList from './view/Users/UsersList';
 import UserDetail from './view/Users/UserDetail';
+import { useTheme } from './contexts/ThemeContext'
 
 function App() {
+  const { theme }  = useTheme()
   return (
-    <div className="App">
+    <div className={`App ${theme}`}>
     <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>

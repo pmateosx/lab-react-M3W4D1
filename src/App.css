@@ -9,3 +9,8 @@ a:link, a:visited, a:active {
     text-decoration:none;
     color: rgb(25, 25, 25);
 }
+
+.dark {
+    background-color: rgb(35, 35, 35);
+    color: white !important;
+}

@@ -19,15 +19,16 @@ const UserDetail  = () => {
     const {name, email, username, phone, website} = user;
     
     return (
-        <div className='User-Detail'>
-            <div className='user-picture'></div>
-            <div className='body-text'>
-                <h2>{name} |  <em>@{username}</em></h2>
-                <small>{email}</small>
-                <div>
-                    <small>{phone} | { website}</small>
+        <div className='wrapper'>
+            <div className='User-Detail'>
+                <div className='user-picture'></div>
+                <div className='body-text'>
+                    <h2>{name} |  <em>@{username}</em></h2>
+                    <small>{email}</small>
+                    <div>
+                        <small>{phone} | { website}</small>
+                    </div>
                 </div>
-
             </div>
         </div>
     )
